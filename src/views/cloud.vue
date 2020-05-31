@@ -10,7 +10,7 @@ export default {
     var charts = this.$echarts.init(document.getElementById("myCharts"));
     charts.showLoading({
             text: '数据正在努力加载...',
-        }); 
+    }); 
     window.setTimeout(() => {
     charts.hideLoading()
       charts.setOption({

@@ -13,6 +13,15 @@
 </template>
 <script>
 export default {
+  mounted() {
+    this.section.forEach((element,index)=>{
+      switch(window.location.pathname) {
+        case this.path[index]:
+        this.selectIndex = index
+        this.selectTitle = element
+      }
+    })
+  },
   data() {
     return {
       section: [
@@ -39,7 +48,8 @@ export default {
         "/Cloud",
         "/Map"
       ],
-      selectIndex: 0
+      selectIndex: 0,
+      selectTitle:""
     };
   },
   methods: {

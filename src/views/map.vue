@@ -602,6 +602,7 @@ export default {
         }
       ]
     };
+    
     charts.setOption(option)
   }
 };

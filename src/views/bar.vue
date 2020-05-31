@@ -131,6 +131,9 @@ export default {
         ]
       });
     }, 500);
+    charts.on("click",function(params) {
+      window.alert(params.name + " 通过 " + params.seriesName + " 进入本站的用户数量为:" + params.data)
+    })
   }
 };
 </script>
