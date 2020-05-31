@@ -95,7 +95,7 @@ new Vue({
             color: '#333'          // 值域文字颜色
         }
     },
-
+    //工具箱
     toolbox: {
         orient: 'horizontal',      // 布局方式，默认为水平布局，可选为：
                                    // 'horizontal' ¦ 'vertical'
